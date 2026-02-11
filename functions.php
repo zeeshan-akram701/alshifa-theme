@@ -15,6 +15,7 @@ function add_theme_styles(){
 
     wp_enqueue_style('footer-style', get_template_directory_uri() . '/assets/css/footer.css');
 
+    wp_enqueue_style('home-style', get_template_directory_uri() . '/assets/css/home.css');
     
 
 
