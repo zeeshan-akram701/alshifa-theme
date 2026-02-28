@@ -103,4 +103,46 @@ function alshifa_theme_support(){
 }
 
 add_action('after_setup_theme', 'alshifa_theme_support');
+
+
+//customization code 
+
+function alshifa_customize_register($wp_customize){
+
+    // Hero Section
+    $wp_customize->add_section('hero_section', array(
+        'title' => 'Hero Section'
+    ));
+
+    $wp_customize->add_setting('hero_heading');
+    $wp_customize->add_control('hero_heading', array(
+        'label' => 'Hero Heading',
+        'section' => 'hero_section',
+        'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('hero_tagline');
+    $wp_customize->add_control('hero_tagline', array(
+        'label' => 'Hero Tagline',
+        'section' => 'hero_section',
+        'type' => 'text',
+    ));
+
+    // CTA Section
+    $wp_customize->add_section('cta_section', array(
+        'title' => 'CTA Section'
+    ));
+
+    $wp_customize->add_setting('cta_text');
+    $wp_customize->add_control('cta_text', array(
+        'label' => 'CTA Text',
+        'section' => 'cta_section',
+        'type' => 'text',
+    ));
+
+}
+
+add_action('customize_register', 'alshifa_customize_register');
+
+
 ?>

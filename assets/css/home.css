@@ -203,3 +203,11 @@ book appointment section styling
 a{
     text-decoration:none;
 }
+
+.hero{
+    padding:20px;
+}
+
+.hero h1{
+    line-height:1.2;
+}

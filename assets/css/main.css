@@ -117,3 +117,56 @@ body{
     line-height:1.9;
     font-size:16px;
 }
+
+
+/* responsiveness code */
+
+/* ========== Responsive Design ========== */
+
+@media (max-width: 992px){
+
+    .site-header{
+        padding:0 20px;
+    }
+
+    .nav-menu ul{
+        gap:15px;
+    }
+
+    .about-container,
+    .services-container,
+    .team-container,
+    .blog-container,
+    .footer-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .service-card,
+    .doctor-card,
+    .blog-card{
+        width:90%;
+    }
+
+    .about-clinic,
+    .services-section,
+    .team-section,
+    .blog-section,
+    .page-section{
+        padding:60px 20px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+}
+
+
+img{
+    max-width:100%;
+    height:auto;
+}

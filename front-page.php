@@ -3,8 +3,9 @@
 <main class="homepage">
 
     <section class="hero">
-        <h1>Welcome to Al Shifa Clinic & Pharmacy</h1>
-        <p>Your health is our top priority</p>
+      <h1><?php echo get_theme_mod('hero_heading', 'Welcome to Al Shifa Clinic & Pharmacy'); ?></h1>
+
+        <p><?php echo get_theme_mod('hero_tagline', 'Your health is our top priority'); ?></p>
         <a href="#" class="btn">Book Appointment</a>
     </section>
     
@@ -101,7 +102,7 @@
 <section class="cta-section">
 
     <div class="cta-container">
-        <h2>Book Your Appointment Today</h2>
+       <h2><?php echo get_theme_mod('cta_text', 'Book Your Appointment Today'); ?></h2>
         <p>Experienced doctors, modern facilities, and compassionate care — all in one place.</p>
         <a href="#" class="cta-btn">Make an Appointment</a>
     </div>
